@@ -1,0 +1,12 @@
+/* (1) FULL WIDTH FORMS */
+
+/* body[data-route^="Form"] .std-form-layout .section-body,
+body[data-route^="Form"] .form-footer {
+    max-width: unset;
+}
+
+body[data-route^="Form"] .form-section,
+body[data-route^="Form"] .form-dashboard-section {
+    padding: 0;
+} */
+
