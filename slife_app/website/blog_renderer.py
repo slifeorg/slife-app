@@ -29,6 +29,10 @@ class BlogPageRenderer(BaseRenderer):
 		return path == "blog" or path.startswith("blog/")
 
 	def render(self):
-		with open(frappe.get_app_path("slife_app", "www", "blog.html"), "rb") as f:
+		path = (getattr(frappe.local, "path", None) or self.path).strip("/ ")
+		# bare /blog -> the SvelteKit listing shell; anything deeper -> a
+		# plain hand-written page that fetches the post via slife_app.api.blog
+		filename = "blog.html" if path == "blog" else "blog_post.html"
+		with open(frappe.get_app_path("slife_app", "www", filename), "rb") as f:
 			html = f.read().decode("utf-8")
 		return self.build_response(html)

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Blog — SLife</title>
+	<style>
+		:root {
+			--bg: #0a0a0a;
+			--surface: #111827;
+			--border: #1f2937;
+			--text: #f3f4f6;
+			--text-muted: #9ca3af;
+			--accent: #4ade80;
+		}
+		* { box-sizing: border-box; }
+		body {
+			margin: 0;
+			background: var(--bg);
+			color: var(--text);
+			font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+			line-height: 1.6;
+		}
+		a { color: inherit; }
+		header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 1.5rem clamp(1rem, 5vw, 2.5rem);
+			border-bottom: 1px solid var(--border);
+		}
+		.brand {
+			font-weight: 600;
+			font-size: 1.25rem;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 0.02em;
+		}
+		.back-link {
+			font-size: 0.9rem;
+			color: var(--text-muted);
+			text-decoration: none;
+		}
+		.back-link:hover { color: var(--accent); }
+		main {
+			max-width: 720px;
+			margin: 0 auto;
+			padding: clamp(1.5rem, 5vw, 3rem) 1.25rem 5rem;
+		}
+		.state { text-align: center; padding: 4rem 1rem; color: var(--text-muted); }
+		.state a { color: var(--accent); text-decoration: underline; }
+		.category {
+			display: inline-block;
+			font-size: 0.8rem;
+			color: var(--accent);
+			text-decoration: none;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+			margin-bottom: 0.75rem;
+		}
+		h1 {
+			font-size: clamp(1.75rem, 4vw, 2.5rem);
+			margin: 0 0 1.25rem;
+		}
+		.meta {
+			display: flex;
+			align-items: center;
+			gap: 0.75rem;
+			color: var(--text-muted);
+			font-size: 0.9rem;
+			margin-bottom: 2rem;
+		}
+		.meta img {
+			width: 36px;
+			height: 36px;
+			border-radius: 999px;
+			object-fit: cover;
+			background: var(--surface);
+		}
+		.meta .author-name { color: var(--text); font-weight: 500; }
+		.cover {
+			width: 100%;
+			aspect-ratio: 16 / 9;
+			object-fit: cover;
+			border-radius: 1rem;
+			border: 1px solid var(--border);
+			margin-bottom: 2rem;
+		}
+		.content { font-size: 1.05rem; }
+		.content img { max-width: 100%; border-radius: 0.5rem; }
+		.content pre { overflow-x: auto; background: var(--surface); padding: 1rem; border-radius: 0.5rem; }
+		.content a { color: var(--accent); }
+	</style>
+</head>
+<body data-sveltekit-preload-data="hover">
+	<header>
+		<a class="brand" href="/">SLife</a>
+		<a class="back-link" href="/blog">&larr; All posts</a>
+	</header>
+	<main id="app">
+		<div class="state">Loading…</div>
+	</main>
+
+	<script>
+		(function () {
+			var app = document.getElementById("app");
+			var route = window.location.pathname.replace(/^\/+|\/+$/g, "");
+
+			function escapeHtml(str) {
+				var div = document.createElement("div");
+				div.textContent = str || "";
+				return div.innerHTML;
+			}
+
+			function renderNotFound() {
+				app.innerHTML =
+					'<div class="state"><p>This post could not be found.</p>' +
+					'<a href="/blog">Back to all posts</a></div>';
+			}
+
+			function renderPost(post) {
+				document.title = post.title + " — SLife";
+
+				var categoryHtml = post.category
+					? '<a class="category" href="/blog/' + escapeHtml(post.category.route) + '">' +
+						escapeHtml(post.category.title) + "</a>"
+					: "";
+
+				var coverHtml = post.cover_image
+					? '<img class="cover" src="' + escapeHtml(post.cover_image) + '" alt="">'
+					: "";
+
+				var avatarHtml = post.author.avatar
+					? '<img src="' + escapeHtml(post.author.avatar) + '" alt="">'
+					: '<img src="data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\'%3E%3Ccircle cx=\'12\' cy=\'12\' r=\'12\' fill=\'%231f2937\'/%3E%3C/svg%3E" alt="">';
+
+				app.innerHTML =
+					categoryHtml +
+					"<h1>" + escapeHtml(post.title) + "</h1>" +
+					'<div class="meta">' +
+						avatarHtml +
+						'<span><span class="author-name">' + escapeHtml(post.author.full_name) + "</span>" +
+						(post.published_on ? " &middot; " + escapeHtml(post.published_on) : "") +
+						(post.read_time ? " &middot; " + escapeHtml(String(post.read_time)) + " min read" : "") +
+						"</span>" +
+					"</div>" +
+					coverHtml +
+					'<div class="content">' + post.content + "</div>";
+			}
+
+			fetch("/api/method/slife_app.api.blog.get_post?route=" + encodeURIComponent(route))
+				.then(function (res) {
+					if (!res.ok) throw new Error("not found");
+					return res.json();
+				})
+				.then(function (data) {
+					if (!data.message) throw new Error("not found");
+					renderPost(data.message);
+				})
+				.catch(renderNotFound);
+		})();
+	</script>
+</body>
+</html>
