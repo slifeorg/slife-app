@@ -1,0 +1,5 @@
+import{B as e,D as t,E as n,G as r,f as i,h as a,i as o,it as s,k as c,q as l,x as u}from"./Cf-yWd9y.js";import"./xihTtKlq.js";var d=c(`<section id="cta" class="items-center pb-0! svelte-1499emb"><h2 class="h2 mb-3 text-center text-[2.5rem] md:text-[4rem] lg:text-[64px] px-4"><!></h2> <p> </p> <a class="btn btn-primary w-64 md:w-88 h-36 md:h-44 rounded-[11rem_11rem_0_0]
+               border-8 border-green-400 flex flex-col pt-12 md:pt-18
+               h5 translate-y-5 hover:translate-y-3 transition-all duration-300
+               ease-in-out bg-gray-900 shadow-green-400/25 shadow-[0_0_80px]
+               cursor-pointer z-0 text-center no-underline"><!></a></section>`);function f(c,f){let p=o(f,`subtextClass`,3,``),m=o(f,`href`,3,`/contact`);var h=d(),g=r(h);u(r(g),()=>f.heading),s(g);var _=l(g,2),v=r(_,!0);s(_);var y=l(_,2);u(r(y),()=>f.buttonText),s(y),s(h),e(()=>{a(_,1,`text-gray-300 text-body md:text-body-lg mb-16 text-center px-4 ${p()??``}`),n(v,f.subtext),i(y,`href`,m())}),t(c,h)}export{f as t};
