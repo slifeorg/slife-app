@@ -58,6 +58,11 @@ app_include_css = "/assets/slife_app/css/overrides.css"
 
 template_apps = ["slife_app", "blog"]
 
+# Claims every /blog... path for slife_app's own SvelteKit shell, ahead of
+# blog app's DocumentPage/ListPage rendering (see website/blog_renderer.py
+# for why - stale category data crashes blog app's native templates).
+page_renderer = ["slife_app.website.blog_renderer.BlogPageRenderer"]
+
 # application home page (will override Website Settings)
 home_page = "home"
 
