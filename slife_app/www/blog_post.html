@@ -104,7 +104,10 @@
 	<script>
 		(function () {
 			var app = document.getElementById("app");
-			var route = window.location.pathname.replace(/^\/+|\/+$/g, "");
+			// location.pathname is already percent-encoded for non-ASCII
+			// segments (e.g. Cyrillic slugs) - decode once here so the
+			// encodeURIComponent() below doesn't double-encode it.
+			var route = decodeURIComponent(window.location.pathname).replace(/^\/+|\/+$/g, "");
 
 			function escapeHtml(str) {
 				var div = document.createElement("div");
