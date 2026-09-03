@@ -1,3 +1,3 @@
-import{D as e,k as t}from"./Cf-yWd9y.js";import"./xihTtKlq.js";var n=t(`<footer class="bg-gray-900 text-gray-300 py-4 px-6 md:px-10 z-1 shadow-green-400/25
+import{D as e,k as t}from"./DPlB44Mr.js";import"./xihTtKlq.js";var n=t(`<footer class="bg-gray-900 text-gray-300 py-4 px-6 md:px-10 z-1 shadow-green-400/25
            shadow-[0_0_80px] relative flex flex-col sm:flex-row gap-3 sm:gap-0
            justify-between items-center"><p>© 2026 SLife. All rights reserved.</p> <div class="text-gray-300 underline flex gap-8"><p>Privacy Policy</p> <p>Terms of Service</p></div></footer>`);function r(t){e(t,n())}export{r as t};

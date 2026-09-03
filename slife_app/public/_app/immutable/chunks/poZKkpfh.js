@@ -1,0 +1,5 @@
+import{D as e,E as t,H as n,Y as r,f as i,h as a,i as o,k as s,ot as c,q as l,x as u}from"./DPlB44Mr.js";import"./xihTtKlq.js";var d=s(`<section id="cta" class="items-center pb-0! svelte-1499emb"><h2 class="h2 mb-3 text-center text-[2.5rem] md:text-[4rem] lg:text-[64px] px-4"><!></h2> <p> </p> <a class="btn btn-primary w-64 md:w-88 h-36 md:h-44 rounded-[11rem_11rem_0_0]
+               border-8 border-green-400 flex flex-col pt-12 md:pt-18
+               h5 translate-y-5 hover:translate-y-3 transition-all duration-300
+               ease-in-out bg-gray-900 shadow-green-400/25 shadow-[0_0_80px]
+               cursor-pointer z-0 text-center no-underline"><!></a></section>`);function f(s,f){let p=o(f,`subtextClass`,3,``),m=o(f,`href`,3,`/contact`);var h=d(),g=l(h);u(l(g),()=>f.heading),c(g);var _=r(g,2),v=l(_,!0);c(_);var y=r(_,2);u(l(y),()=>f.buttonText),c(y),c(h),n(()=>{a(_,1,`text-gray-300 text-body md:text-body-lg mb-16 text-center px-4 ${p()??``}`),t(v,f.subtext),i(y,`href`,m())}),e(s,h)}export{f as t};
