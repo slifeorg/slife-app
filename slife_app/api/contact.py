@@ -31,6 +31,9 @@ def submit_contact_form(name=None, email=None, message=None, services=None):
             "email": email,
             "message": message,
             "services": services_text,
+            # a logged-in (non-Guest) session is staff/dev poking at the form,
+            # not a real customer - keep it out of genuine submission data
+            "is_test": 1 if frappe.session.user != "Guest" else 0,
         }
     )
     doc.insert(ignore_permissions=True)

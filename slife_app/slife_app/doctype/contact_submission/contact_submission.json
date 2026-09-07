@@ -12,6 +12,7 @@
   "email",
   "column_break_1",
   "status",
+  "is_test",
   "services",
   "message"
  ],
@@ -42,6 +43,13 @@
    "in_list_view": 1,
    "label": "Status",
    "options": "New\nRead\nResponded"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_test",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Test Submission"
   },
   {
    "fieldname": "services",

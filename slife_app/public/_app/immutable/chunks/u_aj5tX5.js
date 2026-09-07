@@ -1,0 +1,1 @@
+function e(e){let t=e?._server_messages;if(typeof t==`string`)try{for(let e of JSON.parse(t)){let t=typeof e==`string`?JSON.parse(e)?.message:void 0;if(typeof t==`string`&&t)return t}}catch{}let n=e?.exception;if(typeof n==`string`){let e=n.match(/^\S+:\s*(.+)/s);if(e)return e[1].trim()}return``}export{e as t};
