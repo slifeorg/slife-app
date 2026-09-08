@@ -107,12 +107,14 @@ after_uninstall = "slife_app.install.restore_blog_route"
 # Name of the app being installed is passed as an argument
 
 # before_app_install = "slife_app.utils.before_app_install"
-after_app_install = "slife_app.install.free_blog_route"
+after_app_install = ["slife_app.install.free_blog_route", "slife_app.install.ensure_allowed_referrers"]
 
 # blog app's fixture sync restores Blog Post's DocType-level route="blog"
 # on every migrate, which hijacks /blog away from our own www/blog.html -
-# re-clear it each time, not just on install.
-after_migrate = "slife_app.install.free_blog_route"
+# re-clear it each time, not just on install. ensure_allowed_referrers is
+# here for the same reason (config/cache drift, not a one-time setup step)
+# - see slife_app/install.py for both.
+after_migrate = ["slife_app.install.free_blog_route", "slife_app.install.ensure_allowed_referrers"]
 
 # Integration Cleanup
 # -------------------

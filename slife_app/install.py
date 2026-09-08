@@ -1,5 +1,10 @@
 import frappe
 
+REQUIRED_ALLOWED_REFERRERS = [
+	"http://slife.localhost:8000",
+	"https://slife.guru",
+]
+
 
 def free_blog_route(*args, **kwargs):
 	"""Keep /blog pointed at slife_app's own www/blog.html.
@@ -38,3 +43,21 @@ def restore_blog_route(*args, **kwargs):
 	if frappe.db.get_value("DocType", "Blog Post", "route") == "":
 		frappe.db.set_value("DocType", "Blog Post", "route", "blog", update_modified=False)
 		frappe.clear_cache()
+
+
+def ensure_allowed_referrers(*args, **kwargs):
+	"""Keep REQUIRED_ALLOWED_REFERRERS present in site config, every migrate.
+
+	frappe.auth.HTTPRequest.is_allowed_referrer() reads this list through
+	frappe.cache (see frappe/auth.py), and that redis key has no TTL - once
+	cached (e.g. as an empty list, from any request before this config
+	existed), it lingers indefinitely. update_site_config()'s
+	clear_site_config_cache() only clears the in-process frappe.conf
+	memoization, not this redis key, so it's cleared explicitly below too.
+	"""
+	current = frappe.conf.get("allowed_referrers") or []
+	missing = [origin for origin in REQUIRED_ALLOWED_REFERRERS if origin not in current]
+	if missing:
+		frappe.installer.update_site_config("allowed_referrers", current + missing)
+
+	frappe.cache.delete_value("allowed_referrers")
