@@ -1,5 +1,0 @@
-import{A as e,D as t,O as n,S as r,U as i,Y as a,Z as o,ct as s,f as c,g as l,h as u,i as d}from"./piMtDtPK.js";import"./xihTtKlq.js";import{t as f}from"./BQFifkHH.js";var p=e(`<section id="cta" class="items-center pb-0! svelte-1499emb" data-reveal=""><h2 class="h2 mb-3 text-center text-[2.5rem] md:text-[4rem] lg:text-[64px] px-4"><!></h2> <p> </p> <div><a class="btn btn-primary w-64 md:w-88 h-36 md:h-44 rounded-[11rem_11rem_0_0]
-                   border-8 border-green-400 flex flex-col pt-12 md:pt-18
-                   h5 translate-y-5 hover:translate-y-3 transition-all duration-300
-                   ease-in-out bg-gray-900 shadow-green-400/25 shadow-[0_0_80px]
-                   cursor-pointer z-0 text-center no-underline"><!></a></div></section>`);function m(e,m){let h=d(m,`subtextClass`,3,``),g=d(m,`href`,3,`/contact`);var _=p(),v=a(_);r(a(v),()=>m.heading),s(v);var y=o(v,2),b=a(y,!0);s(y);var x=o(y,2),S=a(x);r(a(S),()=>m.buttonText),s(S),s(x),s(_),l(_,e=>f?.(e)),i(()=>{u(y,1,`text-gray-300 text-body md:text-body-lg mb-16 text-center px-4 ${h()??``}`),t(b,m.subtext),c(S,`href`,g())}),n(e,_)}export{m as t};

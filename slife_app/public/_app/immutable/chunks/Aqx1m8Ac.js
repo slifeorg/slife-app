@@ -1,0 +1,5 @@
+import{C as e,O as t,Q as n,W as r,X as i,_ as a,g as o,i as s,j as c,k as l,lt as u,p as d}from"./BSWNY4YO.js";import"./xihTtKlq.js";import{t as f}from"./CaHyFsNi.js";var p=c(`<section id="cta" class="items-center pb-0! svelte-1499emb" data-reveal=""><h2 class="h2 mb-3 text-center px-4"><!></h2> <p> </p> <div><a class="btn btn-primary w-64 md:w-88 h-36 md:h-44 rounded-[11rem_11rem_0_0]
+                   border-8 border-green-400 flex flex-col pt-12 md:pt-18
+                   h5 translate-y-5 hover:translate-y-3 transition-all duration-300
+                   ease-in-out bg-gray-900 shadow-green-400/25 shadow-[0_0_80px]
+                   cursor-pointer z-0 text-center no-underline"><!></a></div></section>`);function m(c,m){let h=s(m,`subtextClass`,3,``),g=s(m,`href`,3,`/contact`);var _=p(),v=i(_);e(i(v),()=>m.heading),u(v);var y=n(v,2),b=i(y,!0);u(y);var x=n(y,2),S=i(x);e(i(S),()=>m.buttonText),u(S),u(x),u(_),a(_,e=>f?.(e)),r(()=>{o(y,1,`text-gray-300 text-body md:text-body-lg mb-16 text-center px-4 ${h()??``}`),t(b,m.subtext),d(S,`href`,g())}),l(c,_)}export{m as t};

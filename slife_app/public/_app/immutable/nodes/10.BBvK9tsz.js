@@ -1,0 +1,40 @@
+import{E as e,J as t,O as n,Q as r,R as i,T as a,U as o,W as s,X as c,Z as l,_ as u,ct as d,j as f,k as p,lt as m,v as h,w as g}from"../chunks/BSWNY4YO.js";import"../chunks/xihTtKlq.js";import{t as _}from"../chunks/CaHyFsNi.js";var v=f(`<div><h2 class="h4 font-display mb-4"> </h2> <div class="prose text-body text-gray-300 svelte-1e0rsuc"></div></div>`),y=f(`<section id="hero" class="pt-20! md:pt-32! pb-16! md:pb-20! svelte-1e0rsuc" data-reveal=""><h1 class="font-display font-normal text-[clamp(3rem,8vw,7rem)] leading-none tracking-tight md:mx-6">Website Terms of Use</h1> <p class="text-body text-gray-400 md:mx-6 mt-6"></p></section> <section id="content" data-reveal="" class="svelte-1e0rsuc"><div class="max-w-3xl mx-auto md:mx-12 flex flex-col gap-10 md:gap-12"><div class="prose text-body text-gray-300 svelte-1e0rsuc"><p>These Terms govern access to and use of <a href="/">slife.guru</a> (the "Website").</p> <p>The Website is owned and operated by:</p> <!> <p>By visiting the Website, you agree to comply with these Terms. If you do not agree, please stop using the Website.</p></div> <!></div></section>`,1);function b(f){let b=`
+        <p><strong>SLife LLC (ТОВ «ЕСЛАЙФ»)</strong><br>
+        Ukrainian company identification code: 45533873<br>
+        Registered address: 82 Khmelnytske Shose, Vinnytsia, Vinnytsia District, Vinnytsia Region, 21036, Ukraine<br>
+        Email: <a href="mailto:info@slife.guru">info@slife.guru</a></p>
+    `,x=[{title:`1. Purpose of the Website`,html:`
+                <p>The Website provides general information about SLife LLC, its expertise, and possible areas of cooperation involving ERP, automation, artificial intelligence, website development, and related technologies.</p>
+                <p>The Website is not a public software product, online store, or self-service platform. It does not provide user registration, payments, or automated ordering of services.</p>
+            `},{title:`2. No public offer`,html:`
+                <p>Information on the Website, including descriptions of services, processes, outcomes, metrics, and examples, is provided for general information only. It does not by itself constitute a public offer, a guarantee of any result, or an offer to contract on specified terms.</p>
+                <p>Submitting a contact form, sending an email, or making another enquiry does not create a contract or oblige either party to begin cooperation. Scope, price, deadlines, ownership of deliverables, confidentiality, warranties, and liability are determined in a separate agreement or other written arrangement between the parties.</p>
+            `},{title:`3. Use of the Website`,html:`
+                <p>You may view the Website and use its information to learn about SLife LLC for personal or internal business purposes.</p>
+                <p>You must not:</p>
+                <ul>
+                    <li>use the Website for any unlawful or fraudulent purpose;</li>
+                    <li>interfere with the Website, bypass access restrictions, or test its vulnerabilities without written permission;</li>
+                    <li>distribute malicious code, overload the Website through automated requests, or disrupt its operation;</li>
+                    <li>impersonate another person or knowingly provide false contact information;</li>
+                    <li>copy or use Website materials in violation of intellectual property rights.</li>
+                </ul>
+            `},{title:`4. Contact form`,html:`
+                <p>By submitting an enquiry, you confirm that the information you provide is accurate to the extent necessary to handle your request and that you have the right to disclose it.</p>
+                <p>Do not send passwords, payment information, third-party personal data, trade secrets, or other confidential information through the general contact form unless a protected channel has been agreed in advance. Merely sending information through the general contact form does not create a professional or contractual duty of confidentiality between you and SLife LLC.</p>
+                <p>The processing of contact-form data is described in our <a href="/privacy">Privacy Policy</a>.</p>
+            `},{title:`5. Intellectual property`,html:`
+                <p>Unless stated otherwise, the Website's text, graphics, design, logos, structure, and other materials are owned by SLife LLC or used by it lawfully.</p>
+                <p>You may make copies technically necessary to view the Website and quote short extracts with proper source identification. Any other reproduction, distribution, adaptation, or commercial use requires the rights holder's prior written permission unless otherwise permitted by law.</p>
+                <p>Third-party names and marks, including ERPNext, Frappe, Facebook, LinkedIn, Instagram, and Google, belong to their respective owners. Reference to them does not imply sponsorship or endorsement unless expressly stated.</p>
+            `},{title:`6. Accuracy and results`,html:`
+                <p>We aim to keep Website information current but do not guarantee that it is complete, error-free, or suitable for a particular purpose. We may change or remove materials without prior notice.</p>
+                <p>Any figures concerning savings, automation, productivity, availability, or other results are indicative or describe particular scenarios. Actual results depend on starting conditions, processes, infrastructure, scope, and other circumstances and may vary. A specific result is guaranteed only where expressly stated in a separate agreement.</p>
+                <p>Website materials do not constitute legal, financial, accounting, or other professional advice.</p>
+            `},{title:`7. Third-party links`,html:`<p>The Website may link to third-party resources. We do not control and are not responsible for their content, availability, or data practices. You follow external links at your own discretion.</p>`},{title:`8. Website availability`,html:`<p>We may modify, temporarily restrict, or discontinue the Website or any part of it for maintenance, security, or development. We do not guarantee uninterrupted or error-free availability.</p>`},{title:`9. Limitation of liability`,html:`
+                <p>To the extent permitted by Ukrainian law, SLife LLC is not liable for indirect loss arising solely from reliance on the Website's informational materials, inability to access the Website, or use of third-party resources.</p>
+                <p>Nothing in these Terms excludes or limits liability that cannot lawfully be excluded or limited, or deprives any person of rights guaranteed by mandatory provisions of Ukrainian law.</p>
+            `},{title:`10. Personal data`,html:`<p>Our processing of personal data and use of cookies is described in the <a href="/privacy">Privacy Policy</a>, which forms part of these Terms.</p>`},{title:`11. Governing law and disputes`,html:`
+                <p>These Terms are governed by the laws of Ukraine.</p>
+                <p>The parties will first attempt to resolve a dispute through negotiation. If no agreement is reached, the dispute will be submitted to a competent court under the jurisdiction and venue rules established by Ukrainian law.</p>
+            `},{title:`12. Changes to these Terms`,html:`<p>We may update these Terms. The current version and its effective date will be published on this page. Continued use after publication means that the updated Terms apply to subsequent use.</p>`},{title:`13. Contact`,html:`<p>For questions about the Website or these Terms, contact:</p>${b}`}];var S=y();h(`1e0rsuc`,e=>{o(()=>{t.title=`Terms of Service • SLife`})});var C=l(S),w=r(c(C),2);w.textContent=`Effective date: 8 September 2026`,m(C),u(C,e=>_?.(e));var T=r(C,2),E=c(T),D=c(E);g(r(c(D),4),()=>b),d(2),m(D),a(r(D,2),17,()=>x,e,(e,t)=>{var a=v(),o=c(a),l=c(o,!0);m(o);var u=r(o,2);g(u,()=>i(t).html,!0),m(u),m(a),s(()=>n(l,i(t).title)),p(e,a)}),m(E),m(T),u(T,e=>_?.(e)),p(f,S)}export{b as component};
