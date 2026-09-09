@@ -58,6 +58,8 @@ def ensure_allowed_referrers(*args, **kwargs):
 	current = frappe.conf.get("allowed_referrers") or []
 	missing = [origin for origin in REQUIRED_ALLOWED_REFERRERS if origin not in current]
 	if missing:
-		frappe.installer.update_site_config("allowed_referrers", current + missing)
+		from frappe.installer import update_site_config
+
+		update_site_config("allowed_referrers", current + missing)
 
 	frappe.cache.delete_value("allowed_referrers")
