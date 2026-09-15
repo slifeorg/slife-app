@@ -1,21 +1,163 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
-		<loc>https://slife.guru/</loc>
-	</url>
-	<url>
-		<loc>https://slife.guru/erp</loc>
-	</url>
-	<url>
-		<loc>https://slife.guru/ai</loc>
-	</url>
-	<url>
-		<loc>https://slife.guru/about</loc>
-	</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<!-- Blog is English-only for now (dynamic content from the backend,
+	     translation deferred) — no hreflang alternates for it. Every other
+	     page below has an EN/UK/DE hreflang set. -->
 	<url>
 		<loc>https://slife.guru/blog</loc>
 	</url>
+
+	<url>
+		<loc>https://slife.guru/</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/" />
+	</url>
+	<url>
+		<loc>https://slife.guru/uk</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/" />
+	</url>
+	<url>
+		<loc>https://slife.guru/de</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/" />
+	</url>
+
+	<url>
+		<loc>https://slife.guru/erp</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/erp" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk/erp" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de/erp" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/erp" />
+	</url>
+	<url>
+		<loc>https://slife.guru/uk/erp</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/erp" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk/erp" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de/erp" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/erp" />
+	</url>
+	<url>
+		<loc>https://slife.guru/de/erp</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/erp" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk/erp" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de/erp" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/erp" />
+	</url>
+
+	<url>
+		<loc>https://slife.guru/ai</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/ai" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk/ai" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de/ai" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/ai" />
+	</url>
+	<url>
+		<loc>https://slife.guru/uk/ai</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/ai" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk/ai" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de/ai" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/ai" />
+	</url>
+	<url>
+		<loc>https://slife.guru/de/ai</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/ai" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk/ai" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de/ai" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/ai" />
+	</url>
+
+	<url>
+		<loc>https://slife.guru/about</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/about" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk/about" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de/about" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/about" />
+	</url>
+	<url>
+		<loc>https://slife.guru/uk/about</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/about" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk/about" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de/about" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/about" />
+	</url>
+	<url>
+		<loc>https://slife.guru/de/about</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/about" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk/about" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de/about" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/about" />
+	</url>
+
 	<url>
 		<loc>https://slife.guru/contact</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/contact" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk/contact" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de/contact" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/contact" />
+	</url>
+	<url>
+		<loc>https://slife.guru/uk/contact</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/contact" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk/contact" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de/contact" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/contact" />
+	</url>
+	<url>
+		<loc>https://slife.guru/de/contact</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/contact" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk/contact" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de/contact" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/contact" />
+	</url>
+
+	<url>
+		<loc>https://slife.guru/privacy</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/privacy" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk/privacy" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de/privacy" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/privacy" />
+	</url>
+	<url>
+		<loc>https://slife.guru/uk/privacy</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/privacy" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk/privacy" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de/privacy" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/privacy" />
+	</url>
+	<url>
+		<loc>https://slife.guru/de/privacy</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/privacy" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk/privacy" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de/privacy" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/privacy" />
+	</url>
+
+	<url>
+		<loc>https://slife.guru/terms</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/terms" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk/terms" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de/terms" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/terms" />
+	</url>
+	<url>
+		<loc>https://slife.guru/uk/terms</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/terms" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk/terms" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de/terms" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/terms" />
+	</url>
+	<url>
+		<loc>https://slife.guru/de/terms</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://slife.guru/terms" />
+		<xhtml:link rel="alternate" hreflang="uk" href="https://slife.guru/uk/terms" />
+		<xhtml:link rel="alternate" hreflang="de" href="https://slife.guru/de/terms" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://slife.guru/terms" />
 	</url>
 </urlset>
