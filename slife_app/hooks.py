@@ -56,8 +56,6 @@ app_include_css = "/assets/slife_app/css/overrides.css"
 # Home Pages
 # ----------
 
-template_apps = ["slife_app", "blog"]
-
 # Claims every /blog... path for slife_app's own SvelteKit shell, ahead of
 # blog app's DocumentPage/ListPage rendering (see website/blog_renderer.py
 # for why - stale category data crashes blog app's native templates).
